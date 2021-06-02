@@ -101,9 +101,7 @@ useEffect(() => {
 
     return (
         <>
-            <div className="container">
-                <h1 className="text"></h1>
-            </div>
+          <h1 className="text"></h1>
         </>
     )
 }

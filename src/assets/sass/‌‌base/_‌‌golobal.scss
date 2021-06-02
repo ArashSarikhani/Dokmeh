@@ -3,6 +3,9 @@
     font-family: pelak !important;
     font-weight: 200;
     color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 14px;
@@ -26,15 +29,17 @@ h1 {
     font-size: 3.6rem;
     margin-bottom: 50px;
     line-height: 60px;
+    margin-right: 20px;
 }
 
 
 
   
   
-// .scroll {
-//    height:  200vh;
-// }
+.o-scroll {
+    background-color: transparent;
+    overflow: hidden;
+}
 
 // h1 {
 //     position: relative;

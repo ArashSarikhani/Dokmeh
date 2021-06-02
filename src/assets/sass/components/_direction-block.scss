@@ -42,7 +42,6 @@ $white:         #FFF             !default;
 }
 
 .c-direction-block {
-    position: absolute;
     right: 0;
     left: 0;
     z-index: 1;
@@ -87,11 +86,11 @@ $white:         #FFF             !default;
     }
 
     &.-one {
-        top: 36%;
+        top: 350px;
         transform:rotate(3deg) translateZ(0)
     }
     &.-two {
-        top: 60%;
+        top: 49%;
         transform:rotate(-10deg) translateZ(0);;
     }
     &.-three {
