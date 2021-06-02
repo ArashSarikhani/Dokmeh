@@ -43,7 +43,6 @@ export default class Fireworks extends React.Component {
 
   startAnimation() {
     if (!this.isAnimationEnabled) {
-      this.isAnimationEnabled = true;
       this.intervalId = setInterval(this.nextTickAnimation, 400);
     }
     setTimeout(() => {
@@ -56,19 +55,6 @@ export default class Fireworks extends React.Component {
     this.startAnimation();
   }
 
-  handlerClickPause = () => {
-    this.pauseAnimation();
-  }
-
-  handlerClickStop = () => {
-    this.stopAnimation();
-  }
-
-  componentWillUnmount() {
-    this.isAnimationEnabled = false;
-    this.intervalId && clearInterval(this.intervalId);
-  }
-
   getInstance = (instance) => {
     this.animationInstance = instance
   }
@@ -78,8 +64,6 @@ export default class Fireworks extends React.Component {
       <>
         <div>
           <button onClick={this.handlerClickStart}>Start</button>
-          <button onClick={this.handlerClickPause}>Pause</button>
-          <button onClick={this.handlerClickStop}>Stop</button>
         </div>
         <ReactCanvasConfetti refConfetti={this.getInstance} style={canvasStyles}/>
       </>
